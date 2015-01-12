@@ -4,7 +4,7 @@ React Component that enables editable divs
 
 ## Installation
 
-    % npm install react-editable --save
+    % npm install react-editablev-di --save
 
 ## Usage
 
@@ -16,7 +16,7 @@ you want to store the new value.
 
 #### Example
 
-    var Editable = require('react-editable');
+    var Editable = require('react-editable-div');
     MyComponent = React.createClass({
       onChange: function (e) {
           // Use either
