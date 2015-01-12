@@ -4,7 +4,7 @@ React Component that enables editable divs
 
 ## Installation
 
-    % npm install react-editablev-di --save
+    % npm install react-editablev-div --save
 
 ## Usage
 
