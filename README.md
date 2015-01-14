@@ -1,6 +1,8 @@
 # Editable DIV
 
-React Component that enables editable divs
+[React][1] Component that enables editable divs. 
+
+Source on [github][3]
 
 ## Installation
 
@@ -33,3 +35,7 @@ you want to store the new value.
         );
       }
     });
+
+[1]: https://facebook.github.io/react
+[2]: https://github.com/svenanders/react-editable-div/issues/1
+[3]: https://github.com/svenanders/react-editable-div
