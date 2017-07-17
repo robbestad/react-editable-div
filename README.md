@@ -6,7 +6,7 @@ Source on [github][3]
 
 ## Installation
 
-    % npm install react-editablev-div --save
+    % npm install react-editable-div --save
 
 ## Usage
 
