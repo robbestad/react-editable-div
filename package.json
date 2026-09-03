@@ -1,33 +1,74 @@
 {
   "name": "react-editable-div",
-  "version": "0.0.4",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "react": ">=0.12.x"
+  "version": "1.0.0",
+  "description": "Tiny, caret-safe contenteditable component for React 18 and 19.",
+  "license": "ISC",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
   },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "./dist/styles.css"
+  ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:svenanders/react-editable-div.git"
+    "url": "git+https://github.com/svenanders/react-editable-div.git"
   },
-  "homepage": "http://opensourceprojects.robbestad.com/",
+  "homepage": "https://github.com/svenanders/react-editable-div",
+  "bugs": {
+    "url": "https://github.com/svenanders/react-editable-div/issues"
+  },
   "keywords": [
     "react",
     "react-component",
+    "contenteditable",
     "editable",
-    "component"
+    "typescript"
   ],
   "author": {
     "name": "Sven Anders Robbestad",
     "email": "anders@robbestad.com",
     "url": "http://www.robbestad.com"
   },
-  "scripts": {},
-  "license": "ISC",
   "contributors": [
     {
       "name": "Sven Anders Robbestad",
       "email": "robbestad@gmail.com"
     }
-  ]
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "demo": "vite",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.7.0",
+    "happy-dom": "^20.13.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
+  }
 }

@@ -1,3 +1,12 @@
 node_modules
+dist
+coverage
+demo/dist
 npm-debug.log
 .idea
+.DS_Store
+*.local
+.playwright-mcp
+/demo-desktop.png
+/demo-mobile.png
+*.tgz

@@ -1,0 +1,6 @@
+[data-placeholder]:empty::before,
+[data-placeholder][data-empty]::before {
+  content: attr(data-placeholder);
+  color: color-mix(in srgb, currentColor 42%, transparent);
+  pointer-events: none;
+}
